@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "20ffff2b-35f8-4480-a26e-b9104eedca54",
+		"name": "API basic information",
+		"description": "# Introduction\n\nThis is social media-like DRF API\n\n# Overview\n\nAPI allows creating users, posts (which are created by users) like, dislike post, post_analytics, user_login_endpoint\n\n# Error Codes\n\nFollow endpoint guidance to avoid errors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17572649"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/user/sign_up/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/sign_up/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"sign_up",
+						""
+					]
+				},
+				"description": "Returns list of existing users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user/sign_up/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/sign_up/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"sign_up",
+						""
+					]
+				},
+				"description": "Creates new User with POST method. Necessary data: username, email, password"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user/sign_in/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/sign_in/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"sign_in",
+						""
+					]
+				},
+				"description": "Logs user in. Necessary data: username, password"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user/last_login/<int:pk>",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/last_login/<int:pk>",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"last_login",
+						"<int:pk>"
+					]
+				},
+				"description": "Returns user last_login date/time. Necessary param: user's pk"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/post/create_post/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/create_post/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"create_post",
+						""
+					]
+				},
+				"description": "Returns list of existing posts"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/post/create_post/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/create_post/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"create_post",
+						""
+					]
+				},
+				"description": "Creates new Post with POST method. Necessary data: author, title"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/post/like_post/username=<str:username>&post_pk=<int:post_pk>/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/like_post/username=<str:username>&post_pk=<int:post_pk>/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"like_post",
+						"username=<str:username>&post_pk=<int:post_pk>",
+						""
+					]
+				},
+				"description": "Creates new Like with POST method. Necessary params: username, post_pk"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/post/dislike_post/<int:pk>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/dislike_post/<int:pk>",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"dislike_post",
+						"<int:pk>"
+					]
+				},
+				"description": "Deletes like made by user. Necessary param: post_pk"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/post/analitics/date_from=<date_from>&date_to=<date_to>/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post/analitics/date_from=<date_from>&date_to=<date_to>/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post",
+						"analitics",
+						"date_from=<date_from>&date_to=<date_to>",
+						""
+					]
+				},
+				"description": "Returns post likes number. Necessary params: date_from, date_to"
+			},
+			"response": []
+		}
+	]
+}
